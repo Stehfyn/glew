@@ -6,12 +6,13 @@
 --    outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "GLEW"
-	kind "SharedLib"
+	kind "StaticLib"
 	language "C"
 	staticruntime "off"
+	cppdialect "C++latest"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	includedirs
 	{
@@ -65,5 +66,3 @@ project "GLEW"
 		{
 			"opengl32",
 		}
-
-	filter {}
