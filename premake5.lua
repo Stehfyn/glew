@@ -9,7 +9,8 @@ project "GLEW"
 	kind "StaticLib"
 	language "C"
 	staticruntime "off"
-
+	cppdialect "C++latest"
+	
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("../bin-int/" .. outputdir .. "/%{prj.name}")
 
