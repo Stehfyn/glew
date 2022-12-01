@@ -6,7 +6,7 @@
 --    outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "GLEW"
-	kind "SharedLib"
+	kind "StaticLib"
 	language "C"
 	staticruntime "off"
 
