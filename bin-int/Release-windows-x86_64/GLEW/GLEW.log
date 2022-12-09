@@ -1,8 +1,0 @@
-﻿  glew.c
-  glewinfo.c
-C:\dev\Creek\vendor\glew\src\glewinfo.c(16413,11): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\dev\Creek\vendor\glew\src\glewinfo.c(16621,28): warning C4133: '=': incompatible types - from 'char [5]' to 'LPCWSTR'
-C:\dev\Creek\vendor\glew\src\glewinfo.c(16625,1): warning C4133: 'function': incompatible types - from 'char [5]' to 'LPCWSTR'
-C:\dev\Creek\vendor\glew\src\glewinfo.c(16693,25): warning C4133: 'function': incompatible types - from 'char [5]' to 'LPCWSTR'
-  Generating Code...
-  GLEW.vcxproj -> C:\dev\Creek\vendor\glew\bin\Release-windows-x86_64\GLEW\GLEW.dll

@@ -8,9 +8,9 @@
 project "GLEW"
 	kind "StaticLib"
 	language "C"
-	staticruntime "off"
-	cppdialect "C++latest"
-
+	--staticruntime "off"
+	staticruntime "on"
+	
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
@@ -21,6 +21,7 @@ project "GLEW"
 
 	files
 	{
+		"premake5.lua",
 		"include/GL/*.h",
 		"src/glew.c",
 		"src/glewinfo.c",
